@@ -1,0 +1,732 @@
+:root {
+    --bg: #f2dfa1;
+    --text: #221f1f;
+    --muted-text: #4b4442;
+    --header-bg: #383037;  
+    --header-border: #431110;
+    --header-fg: #fff6e9;
+    --accent: #d4af37;
+    --accent-strong: #b78f2a;
+    --panel-bg: rgba(255, 246, 233, 0.85);
+    --header-height: 52px;
+    --footer-height: 52px;
+}
+
+body {
+    font-family: 'Comic Sans MS';
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    background: radial-gradient(1200px 600px at 0% 0%, #faf5ea 0%, transparent 70%),
+                linear-gradient(180deg, #f7f0e6 0%, var(--bg) 100%);
+}
+
+/* Header layout: nav on left, actions (social + hamburger) on right */
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--header-border);
+}
+
+.header-bar {
+    display: grid;
+    grid-template-columns: 1fr auto; /* left: nav, right: actions */
+    align-items: center;
+    gap: 8px;
+    min-height: 52px;
+    padding: 0 70px;
+}
+
+/* Primary navigation (left) */
+nav {
+    grid-column: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; /* left aligned */
+    align-items: center;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0; /* spacing via link padding */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--header-fg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    height: 44px; /* unify header item height */
+    line-height: 1;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+    color: var(--accent);
+}
+
+/* Right side actions */
+.header-actions {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Social icons aligned to right and sized same height as nav items */
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px; /* same as nav item height */
+    color: var(--header-fg);
+    opacity: 0.95;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: opacity 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+    opacity: 1;
+    transform: translateY(-1px);
+    outline: none;
+    color: var(--accent);
+}
+
+.social-icons svg {
+    width: 28px;
+    height: 28px;
+    fill: currentColor;
+}
+
+/* Hamburger (mobile) */
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none; /* shown on mobile */
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px; /* same height as nav items */
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: var(--header-fg);
+    margin: 4px 0;
+    border-radius: 1px;
+    transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+}
+
+main {
+    padding: 16px 20px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Remove extra space at the top of the first element inside main */
+main > h1:first-child,
+main > h2:first-child,
+main > section:first-child,
+main > div:first-child,
+main > p:first-child,
+main > *:first-child {
+    margin-top: 0;
+}
+
+/* About and Home hero: side-by-side text and image */
+.about-hero, .split-hero {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 24px;
+    align-items: start;
+    margin: 24px 0;
+}
+.about-hero .about-text h1, .split-hero .split-text h1 {
+    margin-top: 0;
+}
+.about-hero .about-media, .split-hero .split-media {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.about-hero .about-media::after, .split-hero .split-media::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.08) 0%, rgba(91,26,24,0.35) 100%);
+    pointer-events: none;
+}
+.about-hero .about-media img, .split-hero .split-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Homepage full-bleed hero background with overlaid text */
+html, body { height: 100%; }
+.home { overflow-y: auto; }
+.home footer { display: flex; }
+.home main {
+    padding: 0;
+    min-height: calc(100dvh - var(--header-height) - var(--footer-height));
+    overflow: visible;
+}
+.home .split-hero {
+    position: relative;
+    width: 100%;
+    display: block; /* override grid for home hero */
+    margin-top: 0; /* ensure hero sits below sticky header so H1 is visible */
+    padding: 64px 70px 32px; /* breathing room for left-aligned text */
+    box-sizing: border-box;
+    z-index: 0;
+    /* Layer a gentle light overlay under the text area on desktop/tablet only */
+    background-image:
+        linear-gradient(90deg, rgba(255,255,255,0.58) 0%, rgba(255,255,255,0.32) 36%, rgba(255,255,255,0.08) 64%, rgba(255,255,255,0) 82%),
+        url("images/home_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* fill the entire hero on desktop */
+    /* Focus toward upper-left to capture artist head/face while keeping tabla visible */
+    background-position: 35% 18%;
+    min-height: calc(110dvh - var(--header-height) - var(--footer-height));
+}
+
+/* Tablet focus adjustment (keeps face better framed) */
+@media (min-width: 769px) and (max-width: 1199px) {
+    .home .split-hero {
+        background-position: 40% 22%;
+    }
+}
+/* Very wide screens focus adjustment */
+@media (min-width: 1200px) {
+    .home .split-hero {
+        background-position: -38% 34%;
+    }
+}
+/* Hide inline hero media on desktop; we render background instead */
+.home .split-hero .hero-media,
+.home .split-hero .hero-image {
+    display: none !important; /* not used when background-image drives the hero */
+}
+/* Ensure no overlay tints are applied on the hero image */
+.home .split-hero::before,
+.home .split-hero::after {
+    content: none !important;
+    background: none !important;
+}
+
+/* Hero text overlay on image */
+.home .split-hero .split-text{
+    position: absolute;
+    top: calc(var(--header-height) + 16px);
+    left: 70px;
+    z-index: 10; /* ensure above hero image */
+    max-width: 560px;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0;
+
+    border-radius: 0;
+}
+.home .split-hero .split-media {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .home .split-hero {
+        padding: 20px 16px 24px; /* tighter padding on small screens */
+        min-height: auto;
+        height: auto;
+        background-image: none; /* use inline image element below text */
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: initial;
+    }
+    .home main {
+        min-height: auto;
+        overflow: visible;
+    }
+    .home .split-hero .split-text {
+        position: relative; /* place text at top, first row */
+        top: auto;
+        left: auto;
+        right: auto;
+        max-width: none;
+        z-index: 1;
+        margin: 0;
+    }
+    .home .split-hero .split-text h1 {
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+    }
+    .home .split-hero .split-text p {
+        font-size: 1rem;
+        line-height: 1.45rem;
+        margin: 6px 0;
+    }
+    .home .split-hero .split-text .cta-line {
+        margin-top: 10px;
+    }
+    .home .split-hero .hero-media {
+        display: block !important;
+        margin-top: 12px; /* second row: image only */
+    }
+    .home .split-hero .hero-image {
+        display: block !important;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    /* Ensure image always renders; some devices need explicit img selector */
+    .home .split-hero .hero-media img.hero-image {
+        display: block !important;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Calls-to-action on hero text */
+.about-hero .about-text {
+    background: var(--panel-bg);
+    border-left: 4px solid var(--accent);
+    padding: 12px 14px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(67, 17, 16, 0.08);
+}
+/* Make home hero text sit directly on image with no background panel */
+.home .split-hero .split-text {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0;
+    color: var(--text);
+    text-shadow: none;
+}
+.about-hero .about-text p, .split-hero .split-text p { color: var(--muted-text); }
+/* Home hero text should be dark on image for better contrast on light background */
+.home .split-hero .split-text p { color: var(--text); }
+.cta-line {
+    margin: 8px 0 0;
+}
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: var(--accent);
+    color: #1b1203;
+    border-radius: 6px;
+    text-decoration: none;
+    line-height: 1;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.cta-button:hover,
+.cta-button:focus {
+    background: var(--accent-strong);
+}
+.cta-button svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+.download-link {
+    color: #0b57d0;
+    text-decoration: underline;
+}
+.download-link:hover,
+.download-link:focus {
+    color: #0948ad;
+}
+
+/* Mobile: stack image below text */
+@media (max-width: 768px) {
+    .about-hero,
+    .split-hero {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Ensure page content doesn't hide behind sticky header on anchor jumps */
+:target {
+    scroll-margin-top: 64px; /* match or exceed header height */
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--footer-height);
+    padding: 0;
+    background: var(--header-bg);
+    border-top: 1px solid var(--header-border);
+    color: var(--header-fg);
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* visible on mobile at right in header-actions */
+    }
+
+    /* Hide nav by default on mobile; show when toggled */
+    nav {
+        display: none;
+    }
+    /* When toggled, show nav below header bar, full width and below sticky header */
+    .menu-toggle:checked ~ nav {
+        display: block;
+        grid-column: 1 / -1; /* take full width under header bar */
+        grid-row: 2;
+        background: var(--header-bg); /* ensure visible over content */
+        border-top: 1px solid var(--header-border);
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav ul li a {
+        justify-content: flex-start;
+        padding: 0 12px;
+        height: 48px; /* larger touch target */
+    }
+}
+
+/* About page: two-column artist grid */
+.artist-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px 16px;
+    margin: 8px 0 24px;
+}
+
+.artist-item {
+    padding: 4px 0;
+}
+
+.achievements-container {
+    display: grid;
+    gap: 16px;
+    margin: 16px 0 24px;
+}
+/* Base pop card style shared by achievements and any other H2 sections */
+.achievement-section, .section-pop {
+    background: var(--panel-bg);
+    border-left: 4px solid var(--accent);
+    padding: 12px 14px;
+    border-radius: 10px;
+    box-shadow: 0 8px 22px rgba(67, 17, 16, 0.10);
+    position: relative;
+    outline: 1px solid rgba(212, 175, 55, 0.35);
+    outline-offset: 0;
+    transition: transform 140ms ease, box-shadow 140ms ease, background-color 140ms ease, z-index 140ms ease, outline-color 140ms ease;
+    z-index: 0;
+}
+.achievements-container:hover .achievement-section,
+.achievements-container:hover .section-pop {
+    opacity: 0.94;
+}
+.achievement-section:hover,
+.achievement-section:focus-within,
+.section-pop:hover,
+.section-pop:focus-within {
+    transform: translateY(-4px) scale(1.012);
+    box-shadow: 0 16px 36px rgba(0,0,0,0.22);
+    opacity: 1;
+    z-index: 1;
+    background: rgba(255, 246, 233, 0.99);
+    outline-color: var(--accent-strong);
+}
+/* Accent ring overlay for stronger pop perception */
+.achievement-section:hover::after,
+.achievement-section:focus-within::after,
+.section-pop:hover::after,
+.section-pop:focus-within::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px rgba(212,175,55,0.55) inset;
+    pointer-events: none;
+}
+.achievement-section h2,
+.section-pop h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.achievement-section .artist-grid,
+.section-pop .artist-grid {
+    margin: 8px 0 4px;
+}
+.achievement-section .artist-item,
+.section-pop .artist-item {
+    padding: 6px 8px;
+    border-radius: 6px;
+    transition: background-color 120ms ease, transform 120ms ease, box-shadow 120ms ease;
+}
+.achievement-section .artist-item:hover,
+.achievement-section .artist-item:focus,
+.section-pop .artist-item:hover,
+.section-pop .artist-item:focus {
+    background-color: rgba(212, 175, 55, 0.10);
+    transform: translateX(2px);
+}
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .achievement-section, .section-pop {
+    transition: background-color 0.2s ease, z-index 0.2s ease;
+  }
+  .achievement-section:hover,
+  .achievement-section:focus-within,
+  .section-pop:hover,
+  .section-pop:focus-within {
+    transform: none;
+  }
+}
+
+/* Contact page: two-column layout for Contact Info and Find me Here */
+.contact-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 24px;
+    align-items: start;
+    margin: 1px 0 2px;
+}
+
+
+
+/* Reduce space between the Heading and the first item */
+.contact-info h2 {
+    margin-bottom: 10px; 
+}
+
+/* Remove or reduce the default margins on the contact detail paragraphs */
+.contact-info p {
+    margin: 4px 0; /* 4px space on top/bottom, 0 on left/right */
+    line-height: 1.4; /* Controls the height of the text line itself */
+}
+
+
+/* Tweak icon styling inside content area so it blends with text and stays visible */
+.contact-social .social-icons a {
+    width: 46px;
+    height: 46px;
+    color: var(--header-bg); /* strong contrast on light background */
+    opacity: 1; /* ensure fully visible by default */
+    border-radius: 6px;
+}
+.contact-social .social-icons a:hover,
+.contact-social .social-icons a:focus {
+    color: var(--accent-strong);
+}
+.contact-social .social-icons svg {
+    width: 28px;
+    height: 28px;
+    fill: currentColor; /* ensure icon follows link color */
+}
+
+
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px; /* Increased to allow side-by-side layout */
+}
+
+/* Container for Name and Email */
+.form-row {
+    display: flex;
+    gap: 10px; /* Space between Name and Email */
+}
+
+/* Individual group container for label + input */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Makes Name and Email take equal width in the row */
+}
+
+.contact-form label {
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* The message box will naturally be wider because it's not inside .form-row */
+.contact-form textarea {
+    min-height: 80px;
+}
+
+.contact-form button {
+    width: fit-content;
+    padding: 10px 16px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+/* Gallery page */
+.gallery { 
+    margin: 8px 0 24px; 
+    display: grid; 
+    gap: 16px; 
+}
+.gallery-video .responsive-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    background: #000;
+}
+/* Masonry-style two-column layout using CSS columns */
+.gallery-grid {
+    column-count: 2;
+    column-gap: 12px;
+}
+.gallery-item {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 12px;
+    break-inside: avoid;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    outline: 0;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+.gallery-item:hover img,
+.gallery-item:focus-visible img {
+    transform: translateY(-1px) scale(1.01);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.20);
+    filter: brightness(1.05);
+}
+.gallery-item:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
+
+/* Mobile: stack gallery images to one column */
+@media (max-width: 768px) {
+    .gallery-grid { column-count: 1; }
+    .artist-grid { grid-template-columns: 1fr; }
+    .contact-layout { grid-template-columns: 1fr; }
+}
+
+/* Accordion styles (About page) */
+.accordion-header {
+    margin: 16px 0 8px;
+}
+.accordion-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: transparent;
+    border: 0;
+    padding: 6px 0;
+    cursor: pointer;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+}
+.accordion-button:focus-visible {
+    outline: 15px solid var(--accent);
+    outline-offset: 15px;
+}
+.accordion-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+.accordion-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--header-border);
+    border-radius: 6px;
+    color: var(--header-fg);
+    background: var(--header-bg);
+    flex: 0 0 28px;
+}
+.accordion-button .accordion-icon::before {
+    content: "+";
+    font-size: 20px;
+    line-height: 1;
+}
+.accordion-button[aria-expanded="true"] .accordion-icon::before {
+    content: "\2212"; /* minus sign */
+}
+.accordion-panel {
+    padding: 6px 0 12px;
+}
+
+
+
+
+
+
+
+.tracking-wider {
+    letter-spacing: .05em;
+}
+.font-semibold {
+    font-weight: 700;
+}
+.text-4xl {
+    font-size: 2.45rem;
+    line-height: 2.5rem;
+}
+.font-serif {
+    font-family: var(--font-reckless), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}

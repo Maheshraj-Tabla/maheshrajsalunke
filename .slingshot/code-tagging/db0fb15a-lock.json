@@ -1,0 +1,482 @@
+{
+  "Mahesh-Salunke\\gallery.html": {
+    "f": "gallery.html",
+    "p": "Mahesh-Salunke\\gallery.html",
+    "v": "v1",
+    "c": {
+      "24f541": {
+        "user": "Sachin Dudhankar",
+        "model": "gpt-5",
+        "extraContext": "tbd",
+        "timestamp": 1767183774,
+        "hash": "d8fd449e",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true,
+        "type": "agentEditTool"
+      },
+      "9c0799": {
+        "user": "Sachin Dudhankar",
+        "model": "gpt-5",
+        "extraContext": "tbd",
+        "timestamp": 1767788472,
+        "hash": "aa4836d6",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true,
+        "type": "agentEditTool"
+      },
+      "967e20": {
+        "user": "Sachin Dudhankar",
+        "model": "gpt-5",
+        "extraContext": "tbd",
+        "timestamp": 1768016075,
+        "hash": "e0947a5b",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true,
+        "type": "agentEditTool"
+      }
+    },
+    "l": {
+      "9": {
+        "chunkId": "24f541",
+        "hash": "c005a806",
+        "encoded": "%3Cheader%3E",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "24f541",
+        "hash": "1f49d057",
+        "encoded": "%3Cdiv%20class=%22header-bar%22%20role=%22navigation%22%20aria-label=%22Primary%22%3E",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "24f541",
+        "hash": "c86609fe",
+        "encoded": "%3Cinput%20type=%22checkbox%22%20id=%22menu-toggle%22%20class=%22menu-toggle%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "24f541",
+        "hash": "393545df",
+        "encoded": "%3Cnav%20id=%22primary-nav%22%3E",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "24f541",
+        "hash": "7247c761",
+        "encoded": "%3Cul%3E",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "24f541",
+        "hash": "4a15abe5",
+        "encoded": "%3Cli%3E%3Ca%20href=%22index.html%22%3EHome%3C/a%3E%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "24f541",
+        "hash": "3eac3ef7",
+        "encoded": "%3Cli%3E%3Ca%20href=%22about.html%22%3EAbout%3C/a%3E%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "24f541",
+        "hash": "1f21d46a",
+        "encoded": "%3Cli%3E%3Ca%20href=%22gallery.html%22%3EGallery%3C/a%3E%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "24f541",
+        "hash": "061de7aa",
+        "encoded": "%3Cli%3E%3Ca%20href=%22contact.html%22%3EContact%3C/a%3E%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "24f541",
+        "hash": "2caf01da",
+        "encoded": "%3C/ul%3E",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "24f541",
+        "hash": "6aa46f0a",
+        "encoded": "%3C/nav%3E",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "24f541",
+        "hash": "055ee0a6",
+        "encoded": "%3Cdiv%20class=%22header-actions%22%20aria-label=%22Header%20actions%22%3E",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "24f541",
+        "hash": "9f9c67ca",
+        "encoded": "%3Cdiv%20class=%22social-icons%22%20aria-label=%22Social%20media%20links%22%3E",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "24f541",
+        "hash": "1ca2821e",
+        "encoded": "%3Ca%20href=%22#%22%20aria-label=%22YouTube%22%20title=%22YouTube%22%20target=%22_blank%22%20rel=%22noopener%20noreferrer%22%3E",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "24f541",
+        "hash": "b4342407",
+        "encoded": "%3Csvg%20viewBox=%220%200%2024%2024%22%20aria-hidden=%22true%22%20focusable=%22false%22%3E",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "24f541",
+        "hash": "5b74c0e9",
+        "encoded": "%3Cpath%20d=%22M23%207.5c-.2-1.8-1.9-3.2-3.7-3.3C16.5%204%2012%204%2012%204s-4.5%200-7.3.2C2.9%204.3%201.2%205.7%201%207.5%200.8%209.3%200.8%2012%200.8%2012s0%202.7.2%204.5c.2%201.8%201.9%203.2%203.7%203.3C7.5%2020%2012%2020%2012%2020s4.5%200%207.3-.2c1.8-.1%203.5-1.5%203.7-3.3.2-1.8.2-4.5.2-4.5s0-2.7-.2-4.5zM9.8%2015.5V8.5L15.5%2012l-5.7%203.5z%22%3E%3C/path%3E",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "24f541",
+        "hash": "5d6b78dc",
+        "encoded": "%3C/svg%3E",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "24f541",
+        "hash": "43f83187",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "9c0799",
+        "hash": "6371b5b0",
+        "encoded": "%3Ca%20href=%22#%22%20aria-label=%22Instagram%22%20title=%22Instagram%22%20target=%22_blank%22%20rel=%22noopener%20noreferrer%22%3E",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "9c0799",
+        "hash": "761e4f6e",
+        "encoded": "%3Csvg%20viewBox=%220%200%2024%2024%22%20aria-hidden=%22true%22%20focusable=%22false%22%3E",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "9c0799",
+        "hash": "583768c2",
+        "encoded": "%3Cpath%20fill=%22currentColor%22%20d=%22M12%202.163c3.204%200%203.584.012%204.85.07%201.366.062%202.633.35%203.608%201.325.975.975%201.262%202.242%201.324%203.608.058%201.266.07%201.646.07%204.85s-.012%203.584-.07%204.85c-.062%201.366-.35%202.633-1.324%203.608-.975.975-2.242%201.262-3.608%201.324-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.35-3.608-1.324-.975-.975-1.262-2.242-1.324-3.608C2.175%2015.647%202.163%2015.267%202.163%2012s.012-3.584.07-4.85c.062-1.366.35-2.633%201.324-3.608.975-.975%202.242-1.262%203.608-1.324C8.416%202.175%208.796%202.163%2012%202.163zm0-2.163C8.741%200%208.332.014%207.053.072%205.775.13%204.638.428%203.678%201.388%202.718%202.347%202.42%203.484%202.362%204.763.014%208.331%200%208.741%200%2012s.014%203.669.072%204.947c.058%201.279.356%202.416%201.316%203.375.96.96%202.097%201.258%203.375%201.316C8.331%2023.986%208.741%2024%2012%2024s3.669-.014%204.947-.072c1.279-.058%202.416-.356%203.375-1.316.96-.96%201.258-2.097%201.316-3.375C23.986%2015.669%2024%2015.259%2024%2012s-.014-3.669-.072-4.947c-.058-1.279-.356-2.416-1.316-3.375-.96-.96-2.097-1.258-3.375-1.316C15.669.014%2015.259%200%2012%200zm0%205.838a6.162%206.162%200%201%200%200%2012.324%206.162%206.162%200%200%200%200-12.324zm0%2010.162a3.999%203.999%200%201%201%200-7.998%203.999%203.999%200%200%201%200%207.998zM18.406%204.594a1.44%201.44%200%201%200%200%202.881%201.44%201.44%200%200%200%200-2.881z%22%3E%3C/path%3E",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "9c0799",
+        "hash": "a0b2cdb7",
+        "encoded": "%3C/svg%3E",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "9c0799",
+        "hash": "4f92bd7d",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "24f541",
+        "hash": "d6c14cda",
+        "encoded": "%3Csvg%20viewBox=%220%200%2024%2024%22%20aria-hidden=%22true%22%20focusable=%22false%22%3E",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "24f541",
+        "hash": "f6431a66",
+        "encoded": "%3Cpath%20d=%22M12%202.2c3.2%200%203.6%200%204.9.1%201.2.1%201.8.3%202.2.5.6.2%201%20.5%201.4.9.4.4.7.8.9%201.4.2.4.4%201%20.5%202.2.1%201.3.1%201.7.1%204.9s0%203.6-.1%204.9c-.1%201.2-.3%201.8-.5%202.2-.2.6-.5%201-1%201.4-.4.4-.8.7-1.4.9-.4.2-1%20.4-2.2.5-1.3.1-1.7.1-4.9.1s-3.6%200-4.9-.1c-1.2-.1-1.8-.3-2.2-.5-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.5-2.2C2.2%2015.6%202.2%2015.2%202.2%2012s0-3.6.1-4.9c.1-1.2.3-1.8.5-2.2.2-.6.5-1%201-1.4.4-.4.8-.7%201.4-.9.4-.2%201-.4%202.2-.5C8.4%202.2%208.8%202.2%2012%202.2zm0%201.8c-3.1%200-3.5%200-4.7.1-1%20.1-1.5.2-1.8.4-.4.1-.6.3-.9.6-.3.3-.5.5-.6.9-.2.3-.3.8-.4%201.8-.1%201.2-.1%201.6-.1%204.7s0%203.5.1%204.7c.1%201%20.2%201.5.4%201.8.1.4.3.6.6.9.3.3.5.5.9.6.3.2.8.3%201.8.4%201.2.1%201.6.1%204.7.1s3.5%200%204.7-.1c1-.1%201.5-.2%201.8-.4.4-.1.6-.3.9-.6.3-.3.5-.5.6-.9.2-.3.3-.8.4-1.8.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1-.2-1.5-.4-1.8-.1-.4-.3-.6-.6-.9-.3-.3-.5-.5-.9-.6-.3-.2-.8-.3-1.8-.4-1.2-.1-1.6-.1-4.7-.1zm0%203.3a6.7%206.7%200%201%201%200%2013.3%206.7%206.7%200%200%201%200-13.3zm0%201.8a4.9%204.9%200%201%200%200%209.8%204.9%204.9%200%200%200%200-9.8zm5.1-2a1.2%201.2%200%201%201%200%202.4%201.2%201.2%200%200%201%200-2.4z%22%3E%3C/path%3E",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "24f541",
+        "hash": "7d4d975f",
+        "encoded": "%3C/svg%3E",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "24f541",
+        "hash": "15c10b4a",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "24f541",
+        "hash": "f2f6958a",
+        "encoded": "%3Ca%20href=%22#%22%20aria-label=%22Facebook%22%20title=%22Facebook%22%20target=%22_blank%22%20rel=%22noopener%20noreferrer%22%3E",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "24f541",
+        "hash": "c80d0601",
+        "encoded": "%3Csvg%20viewBox=%220%200%2024%2024%22%20aria-hidden=%22true%22%20focusable=%22false%22%3E",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "24f541",
+        "hash": "bd7401b7",
+        "encoded": "%3Cpath%20d=%22M22%2012a10%2010%200%201%200-11.6%209.9v-7h-2.2V12h2.2V9.7c0-2.2%201.3-3.4%203.3-3.4.9%200%201.9.2%201.9.2v2.1h-1.1c-1%200-1.3.6-1.3%201.2V12h2.3l-.4%202.9h-1.9v7A10%2010%200%200%200%2022%2012z%22%3E%3C/path%3E",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "24f541",
+        "hash": "a515ba2e",
+        "encoded": "%3C/svg%3E",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "24f541",
+        "hash": "16ff5db5",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "24f541",
+        "hash": "6d9ef6e1",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "24f541",
+        "hash": "4a023f2c",
+        "encoded": "%3Clabel%20for=%22menu-toggle%22%20class=%22hamburger%22%20aria-label=%22Open%20menu%22%3E",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "24f541",
+        "hash": "8f99ab44",
+        "encoded": "%3Cspan%3E%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "24f541",
+        "hash": "50707e12",
+        "encoded": "%3Cspan%3E%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "967e20",
+        "hash": "03d9b885",
+        "encoded": "%3C/header%3E",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "967e20",
+        "hash": "aa4463bf",
+        "encoded": "%3Cmain%3E",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "967e20",
+        "hash": "1afb4f90",
+        "encoded": "%3Csection%20class=%22gallery%22%3E",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "967e20",
+        "hash": "c49f65eb",
+        "encoded": "%3Ch2%3EGallery%3C/h2%3E",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "967e20",
+        "hash": "40b45584",
+        "encoded": "%3Cdiv%20class=%22gallery-video%22%3E",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "967e20",
+        "hash": "f9fa2d0c",
+        "encoded": "%3Cvideo%20class=%22responsive-video%22%20autoplay%20muted%20playsinline%20loop%20controls%20preload=%22metadata%22%20poster=%22images/video-poster.jpg%22%20aria-label=%22Featured%20performance%20video%22%3E",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "967e20",
+        "hash": "43a5d86b",
+        "encoded": "%3Csource%20src=%22media/featured.mp4%22%20type=%22video/mp4%22%3E",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "967e20",
+        "hash": "fc6335d5",
+        "encoded": "Your%20browser%20does%20not%20support%20the%20video%20tag.",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "967e20",
+        "hash": "dea2e9da",
+        "encoded": "%3C/video%3E",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "967e20",
+        "hash": "ea01c8e7",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "967e20",
+        "hash": "5aa6e2ee",
+        "encoded": "%3Cdiv%20class=%22gallery-grid%22%3E",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "967e20",
+        "hash": "9431c346",
+        "encoded": "%3Ca%20href=%22images/gallery/img1-large.jpg%22%20class=%22gallery-item%22%3E",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "967e20",
+        "hash": "78ae52b1",
+        "encoded": "%3Cimg%20src=%22images/gallery/img1.jpg%22%20alt=%22Performance%201%22%3E",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "967e20",
+        "hash": "b024317f",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "967e20",
+        "hash": "3b17cf80",
+        "encoded": "%3Ca%20href=%22images/gallery/img2-large.jpg%22%20class=%22gallery-item%22%3E",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "967e20",
+        "hash": "f8d60e9d",
+        "encoded": "%3Cimg%20src=%22images/gallery/img2.jpg%22%20alt=%22Performance%202%22%3E",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "967e20",
+        "hash": "7f01aeb6",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "967e20",
+        "hash": "9e782660",
+        "encoded": "%3Ca%20href=%22images/gallery/img3-large.jpg%22%20class=%22gallery-item%22%3E",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "967e20",
+        "hash": "c647cccb",
+        "encoded": "%3Cimg%20src=%22images/gallery/img3.jpg%22%20alt=%22Performance%203%22%3E",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "967e20",
+        "hash": "67734b83",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "967e20",
+        "hash": "a21c2d5f",
+        "encoded": "%3Ca%20href=%22images/gallery/img4-large.jpg%22%20class=%22gallery-item%22%3E",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "967e20",
+        "hash": "a2b1dea1",
+        "encoded": "%3Cimg%20src=%22images/gallery/img4.jpg%22%20alt=%22Performance%204%22%3E",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "967e20",
+        "hash": "de6ead30",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "967e20",
+        "hash": "e33774d1",
+        "encoded": "%3Ca%20href=%22images/gallery/img5-large.jpg%22%20class=%22gallery-item%22%3E",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "967e20",
+        "hash": "25eff634",
+        "encoded": "%3Cimg%20src=%22images/gallery/img5.jpg%22%20alt=%22Performance%205%22%3E",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "967e20",
+        "hash": "0915e843",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "967e20",
+        "hash": "4194d526",
+        "encoded": "%3Ca%20href=%22images/gallery/img6-large.jpg%22%20class=%22gallery-item%22%3E",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "967e20",
+        "hash": "dea03897",
+        "encoded": "%3Cimg%20src=%22images/gallery/img6.jpg%22%20alt=%22Performance%206%22%3E",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "967e20",
+        "hash": "8f377a25",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "967e20",
+        "hash": "4fa5e5b5",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "967e20",
+        "hash": "037379a8",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "967e20",
+        "hash": "263e721f",
+        "encoded": "%3C/main%3E",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "967e20",
+        "hash": "eea5712e",
+        "encoded": "%3Cfooter%3E",
+        "prevChunkIds": []
+      },
+      "78": {
+        "chunkId": "24f541",
+        "hash": "98183576",
+        "encoded": "%3C/label%3E",
+        "prevChunkIds": []
+      },
+      "79": {
+        "chunkId": "24f541",
+        "hash": "a901a33b",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "80": {
+        "chunkId": "24f541",
+        "hash": "9b9ea868",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "81": {
+        "chunkId": "24f541",
+        "hash": "6daf0a75",
+        "encoded": "%3C/header%3E",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

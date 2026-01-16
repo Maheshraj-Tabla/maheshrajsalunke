@@ -1,0 +1,154 @@
+{
+  "gallery.html": {
+    "f": "gallery.html",
+    "p": "gallery.html",
+    "v": "v1",
+    "c": {
+      "ca3924": {
+        "user": "Sachin Dudhankar",
+        "model": "gpt-5",
+        "extraContext": "tbd",
+        "timestamp": 1767110852,
+        "hash": "2c0181b1",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true,
+        "type": "agentEditTool"
+      }
+    },
+    "l": {
+      "9": {
+        "chunkId": "ca3924",
+        "hash": "c005a806",
+        "encoded": "%3Cheader%3E",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "ca3924",
+        "hash": "7247c761",
+        "encoded": "%3Cul%3E",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "ca3924",
+        "hash": "4a15abe5",
+        "encoded": "%3Cli%3E%3Ca%20href=%22index.html%22%3EHome%3C/a%3E%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "ca3924",
+        "hash": "3eac3ef7",
+        "encoded": "%3Cli%3E%3Ca%20href=%22about.html%22%3EAbout%3C/a%3E%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "ca3924",
+        "hash": "1f21d46a",
+        "encoded": "%3Cli%3E%3Ca%20href=%22gallery.html%22%3EGallery%3C/a%3E%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "ca3924",
+        "hash": "061de7aa",
+        "encoded": "%3Cli%3E%3Ca%20href=%22contact.html%22%3EContact%3C/a%3E%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "ca3924",
+        "hash": "2caf01da",
+        "encoded": "%3C/ul%3E",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "ca3924",
+        "hash": "6aa46f0a",
+        "encoded": "%3C/nav%3E",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "ca3924",
+        "hash": "9f9c67ca",
+        "encoded": "%3Cdiv%20class=%22social-icons%22%20aria-label=%22Social%20media%20links%22%3E",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "ca3924",
+        "hash": "b4342407",
+        "encoded": "%3Csvg%20viewBox=%220%200%2024%2024%22%20aria-hidden=%22true%22%20focusable=%22false%22%3E",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "ca3924",
+        "hash": "5b74c0e9",
+        "encoded": "%3Cpath%20d=%22M23%207.5c-.2-1.8-1.9-3.2-3.7-3.3C16.5%204%2012%204%2012%204s-4.5%200-7.3.2C2.9%204.3%201.2%205.7%201%207.5%200.8%209.3%200.8%2012%200.8%2012s0%202.7.2%204.5c.2%201.8%201.9%203.2%203.7%203.3C7.5%2020%2012%2020%2012%2020s4.5%200%207.3-.2c1.8-.1%203.5-1.5%203.7-3.3.2-1.8.2-4.5.2-4.5s0-2.7-.2-4.5zM9.8%2015.5V8.5L15.5%2012l-5.7%203.5z%22%3E%3C/path%3E",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "ca3924",
+        "hash": "5d6b78dc",
+        "encoded": "%3C/svg%3E",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "ca3924",
+        "hash": "43f83187",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "ca3924",
+        "hash": "761e4f6e",
+        "encoded": "%3Csvg%20viewBox=%220%200%2024%2024%22%20aria-hidden=%22true%22%20focusable=%22false%22%3E",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "ca3924",
+        "hash": "a0b2cdb7",
+        "encoded": "%3C/svg%3E",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "ca3924",
+        "hash": "4f92bd7d",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "ca3924",
+        "hash": "52043f74",
+        "encoded": "%3Csvg%20viewBox=%220%200%2024%2024%22%20aria-hidden=%22true%22%20focusable=%22false%22%3E",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "ca3924",
+        "hash": "e7f2adc7",
+        "encoded": "%3Cpath%20d=%22M22%2012a10%2010%200%201%200-11.6%209.9v-7h-2.2V12h2.2V9.7c0-2.2%201.3-3.4%203.3-3.4.9%200%201.9.2%201.9.2v2.1h-1.1c-1%200-1.3.6-1.3%201.2V12h2.3l-.4%202.9h-1.9v7A10%2010%200%200%200%2022%2012z%22%3E%3C/path%3E",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "ca3924",
+        "hash": "4ab481d7",
+        "encoded": "%3C/svg%3E",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "ca3924",
+        "hash": "1101b2cc",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "ca3924",
+        "hash": "f0f3651f",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "ca3924",
+        "hash": "03d9b885",
+        "encoded": "%3C/header%3E",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

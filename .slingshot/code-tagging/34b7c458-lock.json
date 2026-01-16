@@ -1,0 +1,201 @@
+{
+  "index.html": {
+    "f": "index.html",
+    "p": "index.html",
+    "v": "v1",
+    "c": {
+      "89cd61": {
+        "user": "Sachin Dudhankar",
+        "model": "gpt-5",
+        "extraContext": "tbd",
+        "timestamp": 1767110852,
+        "hash": "9ef9af74",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true,
+        "type": "agentEditTool"
+      },
+      "ee10f9": {
+        "user": "Sachin Dudhankar",
+        "model": "gpt-5",
+        "extraContext": "tbd",
+        "timestamp": 1767788472,
+        "hash": "b4218943",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true,
+        "type": "agentEditTool"
+      }
+    },
+    "l": {
+      "9": {
+        "chunkId": "89cd61",
+        "hash": "c005a806",
+        "encoded": "%3Cheader%3E",
+        "prevChunkIds": [
+          "89cd61"
+        ]
+      },
+      "17": {
+        "chunkId": "89cd61",
+        "hash": "01733f04",
+        "encoded": "%3Cli%3E%3Ca%20href=%22gallery.html%22%3EGallery%3C/a%3E%3C/li%3E",
+        "prevChunkIds": [
+          "89cd61"
+        ]
+      },
+      "18": {
+        "chunkId": "89cd61",
+        "hash": "42789f80",
+        "encoded": "%3Cli%3E%3Ca%20href=%22contact.html%22%3EContact%3C/a%3E%3C/li%3E",
+        "prevChunkIds": [
+          "89cd61"
+        ]
+      },
+      "19": {
+        "chunkId": "89cd61",
+        "hash": "385dea5c",
+        "encoded": "%3C/ul%3E",
+        "prevChunkIds": [
+          "89cd61"
+        ]
+      },
+      "20": {
+        "chunkId": "89cd61",
+        "hash": "0adbbe37",
+        "encoded": "%3C/nav%3E",
+        "prevChunkIds": [
+          "89cd61"
+        ]
+      },
+      "23": {
+        "chunkId": "89cd61",
+        "hash": "2a3d0acc",
+        "encoded": "%3Cdiv%20class=%22social-icons%22%20aria-label=%22Social%20media%20links%22%3E",
+        "prevChunkIds": [
+          "89cd61"
+        ]
+      },
+      "27": {
+        "chunkId": "89cd61",
+        "hash": "85b44f61",
+        "encoded": "%3C/svg%3E",
+        "prevChunkIds": [
+          "89cd61"
+        ]
+      },
+      "28": {
+        "chunkId": "89cd61",
+        "hash": "e81d3daf",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": [
+          "89cd61"
+        ]
+      },
+      "32": {
+        "chunkId": "ee10f9",
+        "hash": "6e822440",
+        "encoded": "%3C/svg%3E",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "ee10f9",
+        "hash": "cef57a41",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "89cd61",
+        "hash": "d31a7a42",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": [
+          "89cd61"
+        ]
+      },
+      "45": {
+        "chunkId": "ee10f9",
+        "hash": "39e57557",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "ee10f9",
+        "hash": "88d2ce22",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "50": {
+        "chunkId": "ee10f9",
+        "hash": "4d10303c",
+        "encoded": "%3Cdiv%20class=%22split-hero%22%20aria-label=%22Homepage%20hero%20with%20background%20image%20and%20text%20overlay%22%3E",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "ee10f9",
+        "hash": "9b28b5f8",
+        "encoded": "%3Cdiv%20class=%22split-text%22%20aria-label=%22Introductory%20text%20over%20background%20image%22%3E",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "ee10f9",
+        "hash": "eb789302",
+        "encoded": "%3Cp%3E%3Cb%3ETabla%20and%20Dhama%20Jori%20Player%3C/b%3E%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "ee10f9",
+        "hash": "6ada5004",
+        "encoded": "%3Cp%20class=%22cta-line%22%3E",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "ee10f9",
+        "hash": "d2bcaca9",
+        "encoded": "%3Ca%20class=%22cta-button%22%20href=%22contact.html%22%20aria-label=%22Reach%20out%20via%20contact%20page%22%3E",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "ee10f9",
+        "hash": "696149d1",
+        "encoded": "%3Csvg%20viewBox=%220%200%2024%2024%22%20aria-hidden=%22true%22%20focusable=%22false%22%20width=%2220%22%20height=%2220%22%3E",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "ee10f9",
+        "hash": "2e5462f1",
+        "encoded": "%3Cpath%20d=%22M20%204H4c-1.1%200-2%20.9-2%202v12c0%201.1.9%202%202%202h16c1.1%200%202-.9%202-2V6c0-1.1-.9-2-2-2zm0%202-8%205L4%206h16zm0%2012H4V8l8%205%208-5v10z%22%3E%3C/path%3E",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "ee10f9",
+        "hash": "3efc9770",
+        "encoded": "%3Cspan%3EReach%20out%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "ee10f9",
+        "hash": "a5b4b746",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "ee10f9",
+        "hash": "d65e2798",
+        "encoded": "%3Cp%20class=%22cta-line%22%3E",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "ee10f9",
+        "hash": "04d4c307",
+        "encoded": "Are%20you%20an%20organiser?%20%3Ca%20id=%22download-biodata%22%20class=%22download-link%22%20href=%22Maheshraj%2520Salunke%2520%2528Tabla%2520%2526%2520Dhama%2520Jori%2520Player%2529%2520CV.pdf-5.pdf%22%20download=%22Maheshraj_Salunke_BioData.pdf%22%3EDownload%20BioData%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "ee10f9",
+        "hash": "8433a077",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

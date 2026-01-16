@@ -1,0 +1,997 @@
+{
+  "Mahesh-Salunke\\about.html": {
+    "f": "about.html",
+    "p": "Mahesh-Salunke\\about.html",
+    "v": "v1",
+    "c": {
+      "56bc5a": {
+        "user": "Sachin Dudhankar",
+        "model": "gpt-5",
+        "extraContext": "tbd",
+        "timestamp": 1767183771,
+        "hash": "d8fd449e",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true,
+        "type": "agentEditTool"
+      },
+      "7e3847": {
+        "user": "Sachin Dudhankar",
+        "model": "gpt-5",
+        "extraContext": "tbd",
+        "timestamp": 1767248837,
+        "hash": "c8c7c475",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true,
+        "type": "agentEditTool"
+      },
+      "ea0f2f": {
+        "user": "Sachin Dudhankar",
+        "model": "gpt-5",
+        "extraContext": "tbd",
+        "timestamp": 1767768111,
+        "hash": "aa4836d6",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true,
+        "type": "agentEditTool"
+      },
+      "5470df": {
+        "user": "Sachin Dudhankar",
+        "model": "gpt-5",
+        "extraContext": "tbd",
+        "timestamp": 1768143674,
+        "hash": "0616a4b0",
+        "messageId": null,
+        "codeBlockId": null,
+        "isActive": true,
+        "type": "agentEditTool"
+      }
+    },
+    "l": {
+      "9": {
+        "chunkId": "56bc5a",
+        "hash": "c005a806",
+        "encoded": "%3Cheader%3E",
+        "prevChunkIds": []
+      },
+      "10": {
+        "chunkId": "56bc5a",
+        "hash": "1f49d057",
+        "encoded": "%3Cdiv%20class=%22header-bar%22%20role=%22navigation%22%20aria-label=%22Primary%22%3E",
+        "prevChunkIds": []
+      },
+      "11": {
+        "chunkId": "56bc5a",
+        "hash": "c86609fe",
+        "encoded": "%3Cinput%20type=%22checkbox%22%20id=%22menu-toggle%22%20class=%22menu-toggle%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "12": {
+        "chunkId": "56bc5a",
+        "hash": "393545df",
+        "encoded": "%3Cnav%20id=%22primary-nav%22%3E",
+        "prevChunkIds": []
+      },
+      "13": {
+        "chunkId": "56bc5a",
+        "hash": "7247c761",
+        "encoded": "%3Cul%3E",
+        "prevChunkIds": []
+      },
+      "14": {
+        "chunkId": "56bc5a",
+        "hash": "4a15abe5",
+        "encoded": "%3Cli%3E%3Ca%20href=%22index.html%22%3EHome%3C/a%3E%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "15": {
+        "chunkId": "56bc5a",
+        "hash": "3eac3ef7",
+        "encoded": "%3Cli%3E%3Ca%20href=%22about.html%22%3EAbout%3C/a%3E%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "16": {
+        "chunkId": "56bc5a",
+        "hash": "1f21d46a",
+        "encoded": "%3Cli%3E%3Ca%20href=%22gallery.html%22%3EGallery%3C/a%3E%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "17": {
+        "chunkId": "56bc5a",
+        "hash": "061de7aa",
+        "encoded": "%3Cli%3E%3Ca%20href=%22contact.html%22%3EContact%3C/a%3E%3C/li%3E",
+        "prevChunkIds": []
+      },
+      "18": {
+        "chunkId": "56bc5a",
+        "hash": "2caf01da",
+        "encoded": "%3C/ul%3E",
+        "prevChunkIds": []
+      },
+      "19": {
+        "chunkId": "56bc5a",
+        "hash": "6aa46f0a",
+        "encoded": "%3C/nav%3E",
+        "prevChunkIds": []
+      },
+      "20": {
+        "chunkId": "56bc5a",
+        "hash": "055ee0a6",
+        "encoded": "%3Cdiv%20class=%22header-actions%22%20aria-label=%22Header%20actions%22%3E",
+        "prevChunkIds": []
+      },
+      "21": {
+        "chunkId": "56bc5a",
+        "hash": "9f9c67ca",
+        "encoded": "%3Cdiv%20class=%22social-icons%22%20aria-label=%22Social%20media%20links%22%3E",
+        "prevChunkIds": []
+      },
+      "22": {
+        "chunkId": "56bc5a",
+        "hash": "1ca2821e",
+        "encoded": "%3Ca%20href=%22#%22%20aria-label=%22YouTube%22%20title=%22YouTube%22%20target=%22_blank%22%20rel=%22noopener%20noreferrer%22%3E",
+        "prevChunkIds": []
+      },
+      "23": {
+        "chunkId": "56bc5a",
+        "hash": "b4342407",
+        "encoded": "%3Csvg%20viewBox=%220%200%2024%2024%22%20aria-hidden=%22true%22%20focusable=%22false%22%3E",
+        "prevChunkIds": []
+      },
+      "24": {
+        "chunkId": "56bc5a",
+        "hash": "5b74c0e9",
+        "encoded": "%3Cpath%20d=%22M23%207.5c-.2-1.8-1.9-3.2-3.7-3.3C16.5%204%2012%204%2012%204s-4.5%200-7.3.2C2.9%204.3%201.2%205.7%201%207.5%200.8%209.3%200.8%2012%200.8%2012s0%202.7.2%204.5c.2%201.8%201.9%203.2%203.7%203.3C7.5%2020%2012%2020%2012%2020s4.5%200%207.3-.2c1.8-.1%203.5-1.5%203.7-3.3.2-1.8.2-4.5.2-4.5s0-2.7-.2-4.5zM9.8%2015.5V8.5L15.5%2012l-5.7%203.5z%22%3E%3C/path%3E",
+        "prevChunkIds": []
+      },
+      "25": {
+        "chunkId": "56bc5a",
+        "hash": "5d6b78dc",
+        "encoded": "%3C/svg%3E",
+        "prevChunkIds": []
+      },
+      "26": {
+        "chunkId": "56bc5a",
+        "hash": "43f83187",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "27": {
+        "chunkId": "ea0f2f",
+        "hash": "6371b5b0",
+        "encoded": "%3Ca%20href=%22#%22%20aria-label=%22Instagram%22%20title=%22Instagram%22%20target=%22_blank%22%20rel=%22noopener%20noreferrer%22%3E",
+        "prevChunkIds": []
+      },
+      "28": {
+        "chunkId": "ea0f2f",
+        "hash": "761e4f6e",
+        "encoded": "%3Csvg%20viewBox=%220%200%2024%2024%22%20aria-hidden=%22true%22%20focusable=%22false%22%3E",
+        "prevChunkIds": []
+      },
+      "29": {
+        "chunkId": "ea0f2f",
+        "hash": "583768c2",
+        "encoded": "%3Cpath%20fill=%22currentColor%22%20d=%22M12%202.163c3.204%200%203.584.012%204.85.07%201.366.062%202.633.35%203.608%201.325.975.975%201.262%202.242%201.324%203.608.058%201.266.07%201.646.07%204.85s-.012%203.584-.07%204.85c-.062%201.366-.35%202.633-1.324%203.608-.975.975-2.242%201.262-3.608%201.324-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.35-3.608-1.324-.975-.975-1.262-2.242-1.324-3.608C2.175%2015.647%202.163%2015.267%202.163%2012s.012-3.584.07-4.85c.062-1.366.35-2.633%201.324-3.608.975-.975%202.242-1.262%203.608-1.324C8.416%202.175%208.796%202.163%2012%202.163zm0-2.163C8.741%200%208.332.014%207.053.072%205.775.13%204.638.428%203.678%201.388%202.718%202.347%202.42%203.484%202.362%204.763.014%208.331%200%208.741%200%2012s.014%203.669.072%204.947c.058%201.279.356%202.416%201.316%203.375.96.96%202.097%201.258%203.375%201.316C8.331%2023.986%208.741%2024%2012%2024s3.669-.014%204.947-.072c1.279-.058%202.416-.356%203.375-1.316.96-.96%201.258-2.097%201.316-3.375C23.986%2015.669%2024%2015.259%2024%2012s-.014-3.669-.072-4.947c-.058-1.279-.356-2.416-1.316-3.375-.96-.96-2.097-1.258-3.375-1.316C15.669.014%2015.259%200%2012%200zm0%205.838a6.162%206.162%200%201%200%200%2012.324%206.162%206.162%200%200%200%200-12.324zm0%2010.162a3.999%203.999%200%201%201%200-7.998%203.999%203.999%200%200%201%200%207.998zM18.406%204.594a1.44%201.44%200%201%200%200%202.881%201.44%201.44%200%200%200%200-2.881z%22%3E%3C/path%3E",
+        "prevChunkIds": []
+      },
+      "30": {
+        "chunkId": "ea0f2f",
+        "hash": "a0b2cdb7",
+        "encoded": "%3C/svg%3E",
+        "prevChunkIds": []
+      },
+      "31": {
+        "chunkId": "ea0f2f",
+        "hash": "4f92bd7d",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "32": {
+        "chunkId": "56bc5a",
+        "hash": "d6c14cda",
+        "encoded": "%3Csvg%20viewBox=%220%200%2024%2024%22%20aria-hidden=%22true%22%20focusable=%22false%22%3E",
+        "prevChunkIds": []
+      },
+      "33": {
+        "chunkId": "56bc5a",
+        "hash": "f6431a66",
+        "encoded": "%3Cpath%20d=%22M12%202.2c3.2%200%203.6%200%204.9.1%201.2.1%201.8.3%202.2.5.6.2%201%20.5%201.4.9.4.4.7.8.9%201.4.2.4.4%201%20.5%202.2.1%201.3.1%201.7.1%204.9s0%203.6-.1%204.9c-.1%201.2-.3%201.8-.5%202.2-.2.6-.5%201-1%201.4-.4.4-.8.7-1.4.9-.4.2-1%20.4-2.2.5-1.3.1-1.7.1-4.9.1s-3.6%200-4.9-.1c-1.2-.1-1.8-.3-2.2-.5-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.5-2.2C2.2%2015.6%202.2%2015.2%202.2%2012s0-3.6.1-4.9c.1-1.2.3-1.8.5-2.2.2-.6.5-1%201-1.4.4-.4.8-.7%201.4-.9.4-.2%201-.4%202.2-.5C8.4%202.2%208.8%202.2%2012%202.2zm0%201.8c-3.1%200-3.5%200-4.7.1-1%20.1-1.5.2-1.8.4-.4.1-.6.3-.9.6-.3.3-.5.5-.6.9-.2.3-.3.8-.4%201.8-.1%201.2-.1%201.6-.1%204.7s0%203.5.1%204.7c.1%201%20.2%201.5.4%201.8.1.4.3.6.6.9.3.3.5.5.9.6.3.2.8.3%201.8.4%201.2.1%201.6.1%204.7.1s3.5%200%204.7-.1c1-.1%201.5-.2%201.8-.4.4-.1.6-.3.9-.6.3-.3.5-.5.6-.9.2-.3.3-.8.4-1.8.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1-.2-1.5-.4-1.8-.1-.4-.3-.6-.6-.9-.3-.3-.5-.5-.9-.6-.3-.2-.8-.3-1.8-.4-1.2-.1-1.6-.1-4.7-.1zm0%203.3a6.7%206.7%200%201%201%200%2013.3%206.7%206.7%200%200%201%200-13.3zm0%201.8a4.9%204.9%200%201%200%200%209.8%204.9%204.9%200%200%200%200-9.8zm5.1-2a1.2%201.2%200%201%201%200%202.4%201.2%201.2%200%200%201%200-2.4z%22%3E%3C/path%3E",
+        "prevChunkIds": []
+      },
+      "34": {
+        "chunkId": "56bc5a",
+        "hash": "7d4d975f",
+        "encoded": "%3C/svg%3E",
+        "prevChunkIds": []
+      },
+      "35": {
+        "chunkId": "56bc5a",
+        "hash": "15c10b4a",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "36": {
+        "chunkId": "56bc5a",
+        "hash": "f2f6958a",
+        "encoded": "%3Ca%20href=%22#%22%20aria-label=%22Facebook%22%20title=%22Facebook%22%20target=%22_blank%22%20rel=%22noopener%20noreferrer%22%3E",
+        "prevChunkIds": []
+      },
+      "37": {
+        "chunkId": "56bc5a",
+        "hash": "c80d0601",
+        "encoded": "%3Csvg%20viewBox=%220%200%2024%2024%22%20aria-hidden=%22true%22%20focusable=%22false%22%3E",
+        "prevChunkIds": []
+      },
+      "38": {
+        "chunkId": "56bc5a",
+        "hash": "bd7401b7",
+        "encoded": "%3Cpath%20d=%22M22%2012a10%2010%200%201%200-11.6%209.9v-7h-2.2V12h2.2V9.7c0-2.2%201.3-3.4%203.3-3.4.9%200%201.9.2%201.9.2v2.1h-1.1c-1%200-1.3.6-1.3%201.2V12h2.3l-.4%202.9h-1.9v7A10%2010%200%200%200%2022%2012z%22%3E%3C/path%3E",
+        "prevChunkIds": []
+      },
+      "39": {
+        "chunkId": "56bc5a",
+        "hash": "a515ba2e",
+        "encoded": "%3C/svg%3E",
+        "prevChunkIds": []
+      },
+      "40": {
+        "chunkId": "56bc5a",
+        "hash": "16ff5db5",
+        "encoded": "%3C/a%3E",
+        "prevChunkIds": []
+      },
+      "41": {
+        "chunkId": "56bc5a",
+        "hash": "6d9ef6e1",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "42": {
+        "chunkId": "56bc5a",
+        "hash": "4a023f2c",
+        "encoded": "%3Clabel%20for=%22menu-toggle%22%20class=%22hamburger%22%20aria-label=%22Open%20menu%22%3E",
+        "prevChunkIds": []
+      },
+      "43": {
+        "chunkId": "56bc5a",
+        "hash": "8f99ab44",
+        "encoded": "%3Cspan%3E%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "44": {
+        "chunkId": "56bc5a",
+        "hash": "50707e12",
+        "encoded": "%3Cspan%3E%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "45": {
+        "chunkId": "56bc5a",
+        "hash": "494037b1",
+        "encoded": "%3Cspan%3E%3C/span%3E",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "56bc5a",
+        "hash": "11bde536",
+        "encoded": "%3C/label%3E",
+        "prevChunkIds": []
+      },
+      "47": {
+        "chunkId": "56bc5a",
+        "hash": "cd26ea9b",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "48": {
+        "chunkId": "56bc5a",
+        "hash": "7882e620",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "49": {
+        "chunkId": "56bc5a",
+        "hash": "7ea669b6",
+        "encoded": "%3C/header%3E",
+        "prevChunkIds": []
+      },
+      "51": {
+        "chunkId": "7e3847",
+        "hash": "e255104c",
+        "encoded": "%3Csection%3E",
+        "prevChunkIds": []
+      },
+      "52": {
+        "chunkId": "7e3847",
+        "hash": "f7f8cb80",
+        "encoded": "%3Cdiv%20class=%22about-hero%22%3E",
+        "prevChunkIds": []
+      },
+      "53": {
+        "chunkId": "7e3847",
+        "hash": "c7c1ab22",
+        "encoded": "%3Cdiv%20class=%22about-text%22%3E",
+        "prevChunkIds": []
+      },
+      "54": {
+        "chunkId": "7e3847",
+        "hash": "aa2804b8",
+        "encoded": "%3Ch1%3EAbout%20Maheshraj%20Salunke%3C/h1%3E",
+        "prevChunkIds": []
+      },
+      "55": {
+        "chunkId": "7e3847",
+        "hash": "d7d1e86d",
+        "encoded": "%3Cp%3EMaheshraj%20Salunke%20is%20a%20distinguished%20Tabla%20and%20Dhama%20Jori%20artist,",
+        "prevChunkIds": []
+      },
+      "56": {
+        "chunkId": "7e3847",
+        "hash": "3b45dbd3",
+        "encoded": "recognized%20as%20the%20only%20musician%20to%20perform%20both%20instruments",
+        "prevChunkIds": []
+      },
+      "57": {
+        "chunkId": "7e3847",
+        "hash": "991c97e0",
+        "encoded": "simultaneously%20in%20Solo%20and%20Accompaniment%20settings.%20His%20exceptional",
+        "prevChunkIds": []
+      },
+      "58": {
+        "chunkId": "7e3847",
+        "hash": "ed2bd5c9",
+        "encoded": "command%20over%20rhythm%20and%20deep-rooted%20training%20under%20the%20guidance",
+        "prevChunkIds": []
+      },
+      "59": {
+        "chunkId": "7e3847",
+        "hash": "3708d964",
+        "encoded": "of%20Pt.Shankar%20Kumbhar%20(Panjab%20Gharana),%20Pt.%20Umeshji%20Moghe%20(Delhi",
+        "prevChunkIds": []
+      },
+      "60": {
+        "chunkId": "7e3847",
+        "hash": "2e30b4e4",
+        "encoded": "Gharana)%20and%20Pt.%20Nayan%20Ghosh%20(Farukhabad%20Gharana)%20have%20shaped",
+        "prevChunkIds": []
+      },
+      "61": {
+        "chunkId": "7e3847",
+        "hash": "be3e5cec",
+        "encoded": "him%20into%20a%20versatile%20and%20sought-after%20percussionist%20in%20the%20Indian",
+        "prevChunkIds": []
+      },
+      "62": {
+        "chunkId": "7e3847",
+        "hash": "383c4329",
+        "encoded": "classical%20music%20fraternity.",
+        "prevChunkIds": []
+      },
+      "63": {
+        "chunkId": "7e3847",
+        "hash": "fa765cde",
+        "encoded": "Maheshraj%20Salunke%20is%20a%20dedicated%20and%20versatile%20musician%20actively",
+        "prevChunkIds": []
+      },
+      "64": {
+        "chunkId": "7e3847",
+        "hash": "47dbb512",
+        "encoded": "engaged%20in%20the%20Indian%20classical%20music%20circuit.",
+        "prevChunkIds": []
+      },
+      "65": {
+        "chunkId": "7e3847",
+        "hash": "049813c0",
+        "encoded": "With%20a%20deep-rooted%20commitment%20to%20classical%20music%20and%20an%20extensive",
+        "prevChunkIds": []
+      },
+      "66": {
+        "chunkId": "7e3847",
+        "hash": "a43a7ca4",
+        "encoded": "performance%20history,%20Maheshraj%20continues%20to%20contribute%20to%20the",
+        "prevChunkIds": []
+      },
+      "67": {
+        "chunkId": "7e3847",
+        "hash": "f458358b",
+        "encoded": "propagation%20and%20enrichment%20of%20India%E2%80%99s%20rich%20musical%20heritage.",
+        "prevChunkIds": []
+      },
+      "68": {
+        "chunkId": "7e3847",
+        "hash": "de48af9a",
+        "encoded": "%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "69": {
+        "chunkId": "7e3847",
+        "hash": "ebc4aab1",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "70": {
+        "chunkId": "7e3847",
+        "hash": "6c19352e",
+        "encoded": "%3Cdiv%20class=%22about-media%22%3E",
+        "prevChunkIds": []
+      },
+      "71": {
+        "chunkId": "7e3847",
+        "hash": "ead992c4",
+        "encoded": "%3Cimg%20src=%22image/about_image.jpg%22%20alt=%22About%20Maheshraj%20Salunke%22%3E",
+        "prevChunkIds": []
+      },
+      "72": {
+        "chunkId": "7e3847",
+        "hash": "32af5855",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "73": {
+        "chunkId": "7e3847",
+        "hash": "8efa883c",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "74": {
+        "chunkId": "7e3847",
+        "hash": "29345252",
+        "encoded": "%3Ch2%3EConcert%20Highlights%3C/h2%3E",
+        "prevChunkIds": []
+      },
+      "75": {
+        "chunkId": "7e3847",
+        "hash": "833b11bb",
+        "encoded": "%3Cp%3EDwarka%20Krishna%20Mandir%20(2018)%3Cp%3E",
+        "prevChunkIds": []
+      },
+      "76": {
+        "chunkId": "7e3847",
+        "hash": "a54b1e73",
+        "encoded": "%3Cp%3EUstad%20Shahid%20Parvez%20Khan%20(2019)%20%E2%80%93%20Performed%20in%20Pondicherry,",
+        "prevChunkIds": []
+      },
+      "77": {
+        "chunkId": "7e3847",
+        "hash": "d47c7ed5",
+        "encoded": "Chennai,%20and%20Bangalore%20(5%20concerts).%20%3C/p%3E",
+        "prevChunkIds": []
+      },
+      "109": {
+        "chunkId": "5470df",
+        "hash": "32a49628",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "111": {
+        "chunkId": "5470df",
+        "hash": "ad8d0920",
+        "encoded": "%3Csection%20class=%22section-pop%22%20aria-labelledby=%22acc-artists%22%3E",
+        "prevChunkIds": []
+      },
+      "112": {
+        "chunkId": "5470df",
+        "hash": "be048b56",
+        "encoded": "%3Ch2%20id=%22acc-artists%22%3EAccompanied%20Eminent%20Artists%3C/h2%3E",
+        "prevChunkIds": []
+      },
+      "113": {
+        "chunkId": "5470df",
+        "hash": "b1d03465",
+        "encoded": "%3Ch3%3EVocalists%3C/h3%3E",
+        "prevChunkIds": []
+      },
+      "114": {
+        "chunkId": "5470df",
+        "hash": "15b74a09",
+        "encoded": "%3Cdiv%20class=%22artist-grid%22%20role=%22list%22%3E",
+        "prevChunkIds": []
+      },
+      "115": {
+        "chunkId": "5470df",
+        "hash": "e57f217d",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Jayateerth%20Mevundi%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "116": {
+        "chunkId": "5470df",
+        "hash": "fd468686",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Raghunandan%20Panshikar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "117": {
+        "chunkId": "5470df",
+        "hash": "83504988",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Babanrao%20Haldankar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "118": {
+        "chunkId": "5470df",
+        "hash": "362d7c11",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20kedar%20bodas%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "119": {
+        "chunkId": "5470df",
+        "hash": "6b38c8e8",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Hemant%20Pendse%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "120": {
+        "chunkId": "5470df",
+        "hash": "fa3a5fd1",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.Vijay%20Koparkar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "121": {
+        "chunkId": "5470df",
+        "hash": "7454233e",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Balasaheb%20Waikar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "122": {
+        "chunkId": "5470df",
+        "hash": "f65cedd1",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Raghunath%20Khandalkar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "123": {
+        "chunkId": "5470df",
+        "hash": "6f29c874",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Shankarao%20Vairagkar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "124": {
+        "chunkId": "5470df",
+        "hash": "d9c4be7e",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Rajendra%20Kandalgaokar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "125": {
+        "chunkId": "5470df",
+        "hash": "9bc2f8bb",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20kumar%20Mardur%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "126": {
+        "chunkId": "5470df",
+        "hash": "e321e9c0",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Sanjay%20Garud%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "127": {
+        "chunkId": "5470df",
+        "hash": "002355c5",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EVidushi%20Manali%20Bose%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "128": {
+        "chunkId": "5470df",
+        "hash": "9949d79e",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EVidhushi%20Sangita%20Bandopadhyay%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "129": {
+        "chunkId": "5470df",
+        "hash": "a314416d",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EVidushi%20Kaber%20Dhar%20Basu%20(Drupad%20)%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "130": {
+        "chunkId": "5470df",
+        "hash": "9a458517",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EVidushi%20Sandhya%20kathgote%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "131": {
+        "chunkId": "5470df",
+        "hash": "ca5cd076",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Ram%20Deshpande%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "132": {
+        "chunkId": "5470df",
+        "hash": "f5595b07",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Mohan%20Kumar%20Darekar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "133": {
+        "chunkId": "5470df",
+        "hash": "3105c3be",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Rattan%20Mohan%20Sharma%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "134": {
+        "chunkId": "5470df",
+        "hash": "bf41700c",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Suresh%20Patki%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "135": {
+        "chunkId": "5470df",
+        "hash": "86fe4b4c",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EVidushi%20Saniya%20Patankar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "136": {
+        "chunkId": "5470df",
+        "hash": "02f5259e",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.Sant%20Kumar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "137": {
+        "chunkId": "5470df",
+        "hash": "ad4b5bba",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "139": {
+        "chunkId": "5470df",
+        "hash": "500ebfdd",
+        "encoded": "%3Ch3%3EInstrumental%3C/h3%3E",
+        "prevChunkIds": []
+      },
+      "140": {
+        "chunkId": "5470df",
+        "hash": "d60d8bc2",
+        "encoded": "%3Cdiv%20class=%22artist-grid%22%20role=%22list%22%3E",
+        "prevChunkIds": []
+      },
+      "141": {
+        "chunkId": "5470df",
+        "hash": "0217878e",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EUstad%20Shahid%20Pervej%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "142": {
+        "chunkId": "5470df",
+        "hash": "c1dac1bb",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Ken%20Zukerman%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "143": {
+        "chunkId": "5470df",
+        "hash": "fc7f3926",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt%20Nayan%20Ghosh%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "144": {
+        "chunkId": "5470df",
+        "hash": "e13cdb3d",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3Evidushi%20Sahana%20Banerjee%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "145": {
+        "chunkId": "5470df",
+        "hash": "b669216f",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Keshav%20Ginde%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "146": {
+        "chunkId": "5470df",
+        "hash": "1ff0c30b",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.Ajay%20Prasann%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "147": {
+        "chunkId": "5470df",
+        "hash": "b405c841",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Vikas%20Babu%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "148": {
+        "chunkId": "5470df",
+        "hash": "5de309ab",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Atul%20Kumar%20Upadhyay%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "149": {
+        "chunkId": "5470df",
+        "hash": "7a908a67",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Kalyan%20Apar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "150": {
+        "chunkId": "5470df",
+        "hash": "3a7dabbe",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Rupak%20Kulkarni%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "151": {
+        "chunkId": "5470df",
+        "hash": "3f028f30",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Rajendra%20Kulkarni%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "152": {
+        "chunkId": "5470df",
+        "hash": "502bd377",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Suvir%20Mishra%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "153": {
+        "chunkId": "5470df",
+        "hash": "2e228879",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Prakash%20Hegde%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "154": {
+        "chunkId": "5470df",
+        "hash": "92afe7b9",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EAnupam%20Joshi%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "155": {
+        "chunkId": "5470df",
+        "hash": "8933c460",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3ENitish%20Purohit%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "156": {
+        "chunkId": "5470df",
+        "hash": "031fdd6f",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPrashekh%20Borkar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "157": {
+        "chunkId": "5470df",
+        "hash": "c4246ba4",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EAbhishek%20Borkar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "158": {
+        "chunkId": "5470df",
+        "hash": "11ca2028",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EShakir%20Khan%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "159": {
+        "chunkId": "5470df",
+        "hash": "e8ef3f49",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3ENikhil%20Patvardhan%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "160": {
+        "chunkId": "5470df",
+        "hash": "d4c630bc",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3ENikhil%20Ghivlikar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "161": {
+        "chunkId": "5470df",
+        "hash": "e0bc3c90",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EKalyani%20Deshpande%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "162": {
+        "chunkId": "5470df",
+        "hash": "7207241e",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3ENinad%20Daithankar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "163": {
+        "chunkId": "5470df",
+        "hash": "61031658",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EApurva%20Petkar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "164": {
+        "chunkId": "5470df",
+        "hash": "768e6c29",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EChintan%20Katti%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "165": {
+        "chunkId": "5470df",
+        "hash": "c32e87f3",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3ETejas%20Upadhyay%20SatyendraSingh%20Solanki%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "166": {
+        "chunkId": "5470df",
+        "hash": "2f324657",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EAzharuddin%20Shaikh%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "167": {
+        "chunkId": "5470df",
+        "hash": "58cb2005",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3ESarang%20Kulkarni%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "168": {
+        "chunkId": "5470df",
+        "hash": "3512f5aa",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EMalvika%20Chopra%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "169": {
+        "chunkId": "5470df",
+        "hash": "f7dab462",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EOmkar%20Agnihotri%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "170": {
+        "chunkId": "5470df",
+        "hash": "0e821075",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "172": {
+        "chunkId": "5470df",
+        "hash": "555a69d0",
+        "encoded": "%3Ch3%3EGhazal%20&%20Light%20Music%3C/h3%3E",
+        "prevChunkIds": []
+      },
+      "173": {
+        "chunkId": "5470df",
+        "hash": "5af7c9c7",
+        "encoded": "%3Cdiv%20class=%22artist-grid%22%20role=%22list%22%3E",
+        "prevChunkIds": []
+      },
+      "174": {
+        "chunkId": "5470df",
+        "hash": "03ccf0a4",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EUstad%20Anwar%20Qureshi%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "175": {
+        "chunkId": "5470df",
+        "hash": "bb2503a9",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EDattprasad%20Ranade%20(Ghazal%20Shuda)%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "176": {
+        "chunkId": "5470df",
+        "hash": "434dbbfb",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EBhavik%20Rathod%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "177": {
+        "chunkId": "5470df",
+        "hash": "34d1210f",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPrajakta%20Savarkar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "178": {
+        "chunkId": "5470df",
+        "hash": "c84f7b5b",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3ENagesh%20Adgaokar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "179": {
+        "chunkId": "5470df",
+        "hash": "a2b0d52e",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EUmeshraj%20Salunke%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "180": {
+        "chunkId": "5470df",
+        "hash": "2d028330",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3ENarsing%20&%20Asavari%20Desai%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "181": {
+        "chunkId": "5470df",
+        "hash": "484d1bd4",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3ERamankat%20&%20Gayatri%20Gaikwad%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "182": {
+        "chunkId": "5470df",
+        "hash": "c2690dd0",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EAnjali%20&%20Nandini%20Gaikwad%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "183": {
+        "chunkId": "5470df",
+        "hash": "c987b2f2",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EKalyanji,%20Kaustubh%20Kartiki%20Gaikwad%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "184": {
+        "chunkId": "5470df",
+        "hash": "98419bd8",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3ESuranjan%20and%20Shubham%20Khandalkar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "185": {
+        "chunkId": "5470df",
+        "hash": "5533dd84",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3ESwarali%20Joshi%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "186": {
+        "chunkId": "5470df",
+        "hash": "3e28a305",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EShankar%20Giri%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "187": {
+        "chunkId": "5470df",
+        "hash": "3b08331d",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "189": {
+        "chunkId": "5470df",
+        "hash": "62fe587a",
+        "encoded": "%3Ch3%3ETabla%20Jugalbandi%3C/h3%3E",
+        "prevChunkIds": []
+      },
+      "190": {
+        "chunkId": "5470df",
+        "hash": "5ee54aa7",
+        "encoded": "%3Cdiv%20class=%22artist-grid%22%20role=%22list%22%3E",
+        "prevChunkIds": []
+      },
+      "191": {
+        "chunkId": "5470df",
+        "hash": "2f54fc90",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EPt.%20Ravishankar%20Upadhyay%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "192": {
+        "chunkId": "5470df",
+        "hash": "8c672714",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3ESukhad%20Munde%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "193": {
+        "chunkId": "5470df",
+        "hash": "b6dac741",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EOmkar%20Dalvi%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "194": {
+        "chunkId": "5470df",
+        "hash": "b09d04f8",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EDeepak%20Dhasvadkar%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "195": {
+        "chunkId": "5470df",
+        "hash": "560e2771",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EGaurav%20&%20Saurav%20Upadhyay%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "196": {
+        "chunkId": "5470df",
+        "hash": "961fc91d",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EAmol%20mali%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "197": {
+        "chunkId": "5470df",
+        "hash": "6382ba9a",
+        "encoded": "%3Cdiv%20class=%22artist-item%22%20role=%22listitem%22%3EShubham%20Ugale%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "198": {
+        "chunkId": "5470df",
+        "hash": "3973dda1",
+        "encoded": "%3C/div%3E",
+        "prevChunkIds": []
+      },
+      "199": {
+        "chunkId": "5470df",
+        "hash": "ab76b8d6",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "200": {
+        "chunkId": "5470df",
+        "hash": "393aa487",
+        "encoded": "%3C/section%3E",
+        "prevChunkIds": []
+      },
+      "201": {
+        "chunkId": "5470df",
+        "hash": "3fd91043",
+        "encoded": "%3C/main%3E",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
