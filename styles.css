@@ -391,9 +391,29 @@ footer {
 
 /* Responsive behavior */
 @media (max-width: 768px) {
-    .hamburger {
-        display: flex; /* visible on mobile at right in header-actions */
-    }
+.hamburger {
+    display: flex; /* visible on mobile at right in header-actions */
+    flex-direction: column;       /* Stack lines vertically */
+    justify-content: space-around; /* Create space between lines */
+    width: 30px;                  /* Width of the icon */
+    height: 24px;                 /* Height of the icon */
+    cursor: pointer;
+    background: transparent;
+    border: 10px;
+    padding: 0;
+}
+
+
+.hamburger::before,
+.hamburger::after,
+.hamburger span {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px; /* Increase this value (e.g., 4px, 5px, 6px) for bolder lines */
+  background-color: white;
+  border-radius: 2px; /* Smooths the edges of the thick lines */
+}
 
     /* Hide nav by default on mobile; show when toggled */
     nav {
