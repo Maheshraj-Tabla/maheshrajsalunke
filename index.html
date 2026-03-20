@@ -79,11 +79,12 @@
     <footer>
         <p>© 2026 Maheshraj Salunke. All rights reserved.</p>
     </footer>
-    <style>
+   <style>
       .ad-reel {
         position: fixed;
         right: max(12px, env(safe-area-inset-right));
-        bottom: max(12px, env(safe-area-inset-bottom));
+        top: max(12px, env(safe-area-inset-top));
+        bottom: auto;
         width: clamp(180px, 40vw, 320px);
         z-index: 1000;
         border-radius: 12px;
@@ -92,13 +93,19 @@
         background: #000;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        touch-action: none; /* enable smooth drag on touch devices */
+        cursor: grab; /* visual affordance for dragging */
+        user-select: none;
+        -webkit-user-select: none;
       }
+      .ad-reel.dragging { cursor: grabbing; }
       .ad-reel video {
         display: block;
         width: 100%;
         height: auto;
         position: relative;
-        z-index: 1; /* ensure video sits below close button */
+        z-index: 1; /* ensure video sits below close/tooltip buttons */
+        pointer-events: auto; /* allow native controls to receive clicks */
       }
       .ad-reel .close-btn {
         position: absolute;
@@ -114,14 +121,40 @@
         font-size: 18px;
         line-height: 26px;
         text-align: center;
-        z-index: 2; /* keep button clickable above video */
+        z-index: 3; /* keep button clickable above everything */
       }
       .ad-reel .close-btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+      /* Move the unmute hint away from the native controls bar so it never covers controls */
+      .ad-reel .unmute-hint {
+        position: absolute;
+        left: 8px;
+        top: 40px; /* was bottom:8px; move to top-left */
+        bottom: auto;
+        background: rgba(0,0,0,.75);
+        color: #fff;
+        border: 1px solid rgba(255,255,255,.45);
+        border-radius: 18px;
+        padding: 8px 12px;
+        font-size: 13px;
+        line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        z-index: 2;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0,0,0,.35);
+        user-select: none;
+        pointer-events: auto; /* ensure hint remains clickable */
+      }
+      .ad-reel .unmute-hint svg { width: 16px; height: 16px; fill: currentColor; }
+      .ad-reel .unmute-hint:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+      .ad-reel .unmute-hint.hidden { display: none; }
       @media (max-width: 480px) {
         .ad-reel {
           width: min(52vw, 220px);
           right: max(8px, env(safe-area-inset-right));
-          bottom: max(8px, env(safe-area-inset-bottom));
+          top: max(8px, env(safe-area-inset-top));
+          bottom: auto;
           border-radius: 10px;
         }
         .ad-reel .close-btn { width: 28px; height: 28px; font-size: 18px; line-height: 26px; }
@@ -131,40 +164,145 @@
 
     <div class="ad-reel" role="dialog" aria-label="Promotional video" aria-live="polite">
       <button type="button" class="close-btn" aria-label="Close video">×</button>
-      <video autoplay muted playsinline webkit-playsinline loop preload="metadata">
+      <button type="button" class="unmute-hint" aria-label="Tap to unmute" aria-live="polite">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 10v4h4l5 5V5L7 10H3zm13.5 2c0-1.77-1.02-3.29-2.5-4.03v8.06c1.48-.74 2.5-2.26 2.5-4.03zm-2.5-9.5v3.05c2.89 1.04 5 3.79 5 6.95s-2.11 5.91-5 6.95V21.5c3.99-1.07 7-4.71 7-9.5s-3.01-8.43-7-9.5z"></path></svg>
+        <span>Tap to unmute</span>
+      </button>
+      <video autoplay muted playsinline webkit-playsinline loop preload="metadata" controls>
         <source src="media/podcast.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
-
     <script>
       (function () {
         var container = document.querySelector('.ad-reel');
         if (!container) return;
         var btn = container.querySelector('.close-btn');
+        var hint = container.querySelector('.unmute-hint');
         var vid = container.querySelector('video');
 
-        // Ensure muted+inline for iOS autoplay and attempt play on load
+        // Ensure correct attributes for widest autoplay support
         if (vid) {
-          vid.setAttribute('muted', '');
+          vid.setAttribute('muted', ''); // attribute required for autoplay in many browsers
           vid.muted = true;
-          var tryPlay = function () {
+          vid.setAttribute('autoplay', '');
+          vid.setAttribute('playsinline', '');
+          vid.setAttribute('webkit-playsinline', '');
+          // Start without controls (preference A: show after playback starts)
+          try { vid.controls = false; } catch (_) {}
+          if (!vid.hasAttribute('tabindex')) vid.setAttribute('tabindex', '0');
+
+          function tryPlay() {
             try {
               var p = vid.play && vid.play();
               if (p && typeof p.then === 'function') {
-                p.catch(function () { /* ignore autoplay block */ });
+                p.catch(function () { /* ignore; we'll retry on other events */ });
               }
             } catch (_) {}
-          };
+          }
+
+          // Attempt autoplay multiple times and on key media/document events
           if (document.readyState === 'complete') { tryPlay(); }
-          else window.addEventListener('load', tryPlay, { once: true });
+          else window.addEventListener('load', function () { tryPlay(); setTimeout(tryPlay, 400); setTimeout(tryPlay, 1200); }, { once: true });
+          vid.addEventListener('loadedmetadata', tryPlay, { once: true });
+          vid.addEventListener('loadeddata', tryPlay, { once: true });
+          vid.addEventListener('canplay', tryPlay, { once: true });
+          document.addEventListener('visibilitychange', function () { if (!document.hidden) { tryPlay(); setTimeout(tryPlay, 250); } });
+
+          // As a last resort, the first pointer interaction will also attempt to start playback
+          document.addEventListener('pointerdown', function once() { tryPlay(); document.removeEventListener('pointerdown', once); }, { passive: true });
+
+          // Show native controls right after the video actually starts playing
+          vid.addEventListener('playing', function () {
+            try { vid.controls = true; } catch (_) {}
+          });
+
+          // If user presses the native Play while muted, unmute immediately to allow sound
+          function onNativePlay(e) {
+            try {
+              if (e && e.isTrusted && vid.muted) {
+                try { vid.pause(); } catch (_) {}
+                vid.muted = false;
+                vid.removeAttribute('muted');
+                try { vid.volume = 1.0; } catch (_) {}
+                hideHint();
+                var p2 = vid.play && vid.play();
+                if (p2 && typeof p2.then === 'function') { p2.catch(function () {}); }
+                detachUnmuteBindings();
+              }
+            } catch (_) {}
+          }
+          vid.addEventListener('play', onNativePlay);
         }
 
-        try {
-          if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-            if (vid && !vid.paused) vid.pause();
-          }
-        } catch (e) {}
+        // Tooltip helpers
+        function showHint() {
+          if (!hint) return;
+          hint.classList.remove('hidden');
+          hint.setAttribute('aria-hidden', 'false');
+        }
+        function hideHint() {
+          if (!hint) return;
+          hint.classList.add('hidden');
+          hint.setAttribute('aria-hidden', 'true');
+        }
+
+        // Show hint initially if muted and update on mute state changes
+        if (vid) {
+          if (vid.muted || vid.hasAttribute('muted')) showHint();
+          vid.addEventListener('volumechange', function () {
+            if (vid.muted === false) hideHint(); else showHint();
+          });
+        }
+
+        // Unmute on first user interaction with the video or hint
+        function unmuteAndPlayOnce() {
+          if (!vid) return;
+          try {
+            try { vid.pause(); } catch (_) {}
+            vid.muted = false;
+            vid.removeAttribute('muted');
+            try { vid.volume = 1.0; } catch (_) {}
+            hideHint();
+            var p = vid.play && vid.play();
+            if (p && typeof p.then === 'function') { p.catch(function () { showHint(); }); }
+            detachUnmuteBindings();
+          } catch (_) {}
+        }
+
+        function onKey(e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); unmuteAndPlayOnce(); } }
+
+        function detachUnmuteBindings() {
+          try {
+            if (!vid) return;
+            vid.removeEventListener('pointerdown', unmuteAndPlayOnce);
+            vid.removeEventListener('click', unmuteAndPlayOnce);
+            vid.removeEventListener('touchend', unmuteAndPlayOnce);
+            vid.removeEventListener('keydown', onKey);
+            vid.removeEventListener('play', onNativePlay);
+            if (hint) {
+              hint.removeEventListener('pointerdown', onHintPointerDown);
+              hint.removeEventListener('click', unmuteAndPlayOnce);
+              hint.removeEventListener('keydown', onKey);
+            }
+          } catch (_) {}
+        }
+
+        function onHintPointerDown(e) { e.preventDefault(); unmuteAndPlayOnce(); }
+
+        if (vid) {
+          // pointerdown keeps us within the user gesture on mobile browsers
+          vid.addEventListener('pointerdown', unmuteAndPlayOnce, { passive: true });
+          vid.addEventListener('click', unmuteAndPlayOnce);
+          vid.addEventListener('touchend', unmuteAndPlayOnce, { passive: true });
+          // keyboard interaction for accessibility
+          vid.addEventListener('keydown', onKey);
+        }
+        if (hint) {
+          hint.addEventListener('pointerdown', onHintPointerDown, { passive: false });
+          hint.addEventListener('click', unmuteAndPlayOnce);
+          hint.addEventListener('keydown', onKey);
+        }
 
         function closeAd() {
           try { if (vid) { vid.pause(); vid.src = ''; vid.load(); } } catch (e) {}
@@ -185,6 +323,92 @@
         document.addEventListener('keydown', function (e) {
           if (e.key === 'Escape' && container.style.display !== 'none') { closeAd(); }
         });
+
+        // Make the video container draggable (mouse + touch) within the viewport
+        (function setupDrag() {
+          if (!container) return;
+          var threshold = 5; // pixels before we treat as drag
+          var startX = 0, startY = 0, startLeft = 0, startTop = 0;
+          var dragging = false, moved = false, rafId = 0;
+          var nextLeft = 0, nextTop = 0;
+
+          function clamp(v, min, max) { return Math.max(min, Math.min(max, v)); }
+
+          function applyPosition(l, t) {
+            cancelAnimationFrame(rafId);
+            rafId = requestAnimationFrame(function () {
+              container.style.left = l + 'px';
+              container.style.top = t + 'px';
+            });
+          }
+
+          function ensureLeftTopAnchors() {
+            var cs = window.getComputedStyle(container);
+            if (cs.right !== 'auto' || cs.bottom !== 'auto') {
+              var rect = container.getBoundingClientRect();
+              container.style.left = rect.left + 'px';
+              container.style.top = rect.top + 'px';
+              container.style.right = 'auto';
+              container.style.bottom = 'auto';
+            }
+          }
+
+          function onPointerDown(e) {
+            if (!e.isPrimary) return;
+            if (e.button != null && e.button !== 0) return; // only left click / primary touch
+            if (e.target.closest('.close-btn') || e.target.closest('.unmute-hint')) return; // don't start drag from buttons
+            startX = e.clientX; startY = e.clientY;
+            moved = false; dragging = true;
+            container.classList.add('dragging');
+            try { container.setPointerCapture(e.pointerId); } catch (_) {}
+            window.addEventListener('pointermove', onPointerMove, { passive: false });
+            window.addEventListener('pointerup', onPointerUp, { passive: true, once: true });
+          }
+
+          function onPointerMove(e) {
+            if (!dragging) return;
+            var dx = e.clientX - startX;
+            var dy = e.clientY - startY;
+            if (!moved) {
+              if (Math.abs(dx) + Math.abs(dy) < threshold) return;
+              moved = true;
+              ensureLeftTopAnchors();
+              // Update base after switching anchors
+              var rect = container.getBoundingClientRect();
+              startLeft = rect.left;
+              startTop = rect.top;
+            }
+            e.preventDefault(); // prevent page scroll while dragging
+            var targetLeft = startLeft + dx;
+            var targetTop = startTop + dy;
+            var maxLeft = window.innerWidth - container.offsetWidth - 8;
+            var maxTop = window.innerHeight - container.offsetHeight - 8;
+            nextLeft = clamp(targetLeft, 8, Math.max(8, maxLeft));
+            nextTop = clamp(targetTop, 8, Math.max(8, maxTop));
+            applyPosition(nextLeft, nextTop);
+          }
+
+          function onPointerUp(e) {
+            dragging = false;
+            container.classList.remove('dragging');
+            try { container.releasePointerCapture(e.pointerId); } catch (_) {}
+            window.removeEventListener('pointermove', onPointerMove, { passive: false });
+          }
+
+          container.addEventListener('pointerdown', onPointerDown);
+
+          // Keep the widget inside the viewport when the window resizes or rotates
+          window.addEventListener('resize', function () {
+            if (!container || !container.offsetWidth) return;
+            var rect = container.getBoundingClientRect();
+            var maxLeft = window.innerWidth - container.offsetWidth - 8;
+            var maxTop = window.innerHeight - container.offsetHeight - 8;
+            var newLeft = clamp(rect.left, 8, Math.max(8, maxLeft));
+            var newTop = clamp(rect.top, 8, Math.max(8, maxTop));
+            container.style.left = newLeft + 'px';
+            container.style.top = newTop + 'px';
+          });
+        })();
       })();
     </script>
     <script>
