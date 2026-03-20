@@ -79,6 +79,114 @@
     <footer>
         <p>© 2026 Maheshraj Salunke. All rights reserved.</p>
     </footer>
+    <style>
+      .ad-reel {
+        position: fixed;
+        right: max(12px, env(safe-area-inset-right));
+        bottom: max(12px, env(safe-area-inset-bottom));
+        width: clamp(180px, 40vw, 320px);
+        z-index: 1000;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 6px 24px rgba(0,0,0,.25);
+        background: #000;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      .ad-reel video {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1; /* ensure video sits below close button */
+      }
+      .ad-reel .close-btn {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        background: rgba(0,0,0,.6);
+        border: 1px solid rgba(255,255,255,.4);
+        color: #fff;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        z-index: 2; /* keep button clickable above video */
+      }
+      .ad-reel .close-btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+      @media (max-width: 480px) {
+        .ad-reel {
+          width: min(52vw, 220px);
+          right: max(8px, env(safe-area-inset-right));
+          bottom: max(8px, env(safe-area-inset-bottom));
+          border-radius: 10px;
+        }
+        .ad-reel .close-btn { width: 28px; height: 28px; font-size: 18px; line-height: 26px; }
+      }
+      @media (prefers-reduced-motion: reduce) { .ad-reel video { animation: none; transition: none; } }
+    </style>
+
+    <div class="ad-reel" role="dialog" aria-label="Promotional video" aria-live="polite">
+      <button type="button" class="close-btn" aria-label="Close video">×</button>
+      <video autoplay muted playsinline webkit-playsinline loop preload="metadata">
+        <source src="media/podcast.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <script>
+      (function () {
+        var container = document.querySelector('.ad-reel');
+        if (!container) return;
+        var btn = container.querySelector('.close-btn');
+        var vid = container.querySelector('video');
+
+        // Ensure muted+inline for iOS autoplay and attempt play on load
+        if (vid) {
+          vid.setAttribute('muted', '');
+          vid.muted = true;
+          var tryPlay = function () {
+            try {
+              var p = vid.play && vid.play();
+              if (p && typeof p.then === 'function') {
+                p.catch(function () { /* ignore autoplay block */ });
+              }
+            } catch (_) {}
+          };
+          if (document.readyState === 'complete') { tryPlay(); }
+          else window.addEventListener('load', tryPlay, { once: true });
+        }
+
+        try {
+          if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            if (vid && !vid.paused) vid.pause();
+          }
+        } catch (e) {}
+
+        function closeAd() {
+          try { if (vid) { vid.pause(); vid.src = ''; vid.load(); } } catch (e) {}
+          container.setAttribute('aria-hidden', 'true');
+          container.style.display = 'none';
+        }
+
+        if (btn) {
+          btn.addEventListener('click', closeAd);
+          btn.addEventListener('pointerdown', function (e) {
+            if (e.pointerType === 'touch') { e.preventDefault(); closeAd(); }
+          }, { passive: false });
+          btn.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); closeAd(); }
+          });
+        }
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && container.style.display !== 'none') { closeAd(); }
+        });
+      })();
+    </script>
     <script>
       (function () {
         var link = document.getElementById('download-biodata');
